@@ -1,0 +1,70 @@
+#####################################
+Preference F1 score
+#####################################
+echo "---------------Emotion-Multi-task Preference F1--------------" >> Emotion-Multi-task.txt
+echo "====Uni-modal - T - A - V ====" >> Emotion-Multi-task.txt
+cat unimodal_text_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 6,6 | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+cat unimodal_audio_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+cat unimodal_video_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+echo "====Bi-modal - TV - TA - AV ====" >> Emotion-Multi-task.txt
+cat bimodal_tv_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+cat bimodal_ta_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+cat bimodal_av_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+echo "====Tri-modal - TAV ====" >> Emotion-Multi-task.txt
+cat trimodal_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+
+#####################################
+Preference W-Acc
+#####################################
+echo "---------------Emotion-Multi-task Preference W-Acc--------------" >> Emotion-Multi-task.txt
+echo "====Uni-modal - T - A - V ====" >> Emotion-Multi-task.txt
+cat unimodal_text_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+cat unimodal_audio_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+cat unimodal_video_emo.txt | grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+echo "====Bi-modal - TV - TA - AV ====" >> Emotion-Multi-task.txt
+cat bimodal_tv_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+cat bimodal_ta_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+cat bimodal_av_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+echo "====Tri-modal - TAV ====" >> Emotion-Multi-task.txt
+cat trimodal_emo.txt |  grep "average" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+#####################################
+emotion-wise-Fscore
+#####################################
+echo "---------------Emotion-wise F-score--------------" >> Emotion-Multi-task.txt
+cat trimodal_emo.txt |  grep "Anger" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Disgust" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Fear" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Happy" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Sad" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Surprise" | grep -P "Threshold:" | sort -k 6,6  | tail -1 | cut -d$'\t' -f'5' >> Emotion-Multi-task.txt
+
+#####################################
+emotion-wise-WAcc
+#####################################
+echo "---------------Emotion-wise WAcc--------------" >> Emotion-Multi-task.txt
+cat trimodal_emo.txt |  grep "Anger" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Disgust" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Fear" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Happy" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Sad" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+cat trimodal_emo.txt |  grep "Surprise" | grep -P "Threshold:" | sort -k 7,7  | tail -1 | cut -d$'\t' -f'6' >> Emotion-Multi-task.txt
+
+
+
+
