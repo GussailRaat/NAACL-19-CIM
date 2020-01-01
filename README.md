@@ -5,7 +5,7 @@ For the evaluation of our proposed multi-task CIM framerwork, we use benchmark m
 
 ### Dataset
 
-* You can download datasets from this link (https://drive.google.com/open?id=1kq4_WqW0tDzBLu01yZbvdCpQ0iPBJWyQ).
+* You can download datasets from this [link](https://drive.google.com/open?id=1kq4_WqW0tDzBLu01yZbvdCpQ0iPBJWyQ).
 
 * Download the dataset from given link and set the path in the code accordingly make two folder (i) results and (ii) weights.
 
