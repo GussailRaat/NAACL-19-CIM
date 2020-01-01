@@ -11,7 +11,7 @@ For the evaluation of our proposed multi-task CIM framerwork, we use benchmark m
 
 -------------------------------------------------------
 ### For MOSEI Dataset:
-for trimodal-->>  python trimodal_multitask.py  
+For trimodal-->>  python trimodal_multitask.py  
 
 -------------------------------------------------------
 
