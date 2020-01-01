@@ -9,12 +9,11 @@ For the evaluation of our proposed multi-task CIM framerwork, we use benchmark m
 
 * Download the dataset from given link and set the path in the code accordingly make two folder (i) results and (ii) weights.
 
-## How to Run:
-
+-------------------------------------------------------
 ### For MOSEI Dataset:
 for Multi-task trimodal-->>  python trimodal.py  
 
-========================
+-------------------------------------------------------
 
 ### --versions--
 
