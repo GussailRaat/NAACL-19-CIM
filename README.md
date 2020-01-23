@@ -17,7 +17,7 @@ For trimodal-->>  python trimodal_multitask.py
 
 ### Emotion Results Extractor
 
-Follow these steps to extract the threshold based resluls for emotion:
+Follow these steps to extract the threshold based results for emotion:
 
 * Open the text file i.e., multiTask_emotion_results_extractor.txt
 * Copy and paste on the terminal
